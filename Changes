@@ -1,4 +1,9 @@
 ---
+version: 0.0.4
+date:    Wed Dec 31 22:29:59 PST 2014
+changes:
+- Allow for multiple authors
+---
 version: 0.0.3
 date:    Wed Dec 31 21:29:42 PST 2014
 changes:
