@@ -1,7 +1,7 @@
 =meta: 0.0.2
 
 name: Swim-Plugin-cpan
-version: 0.0.2
+version: 0.0.3
 abstract: Swim CPAN Head/Tail Support
 homepage: https://metacpan.org/release/Swim-Plugin-cpan
 language: perl
@@ -19,7 +19,7 @@ author:
 devel:
   git: https://github.com/ingydotnet/swim-plugin-cpan-pm
   bug: https://github.com/ingydotnet/swim-plugin-cpan-pm/issues
-  irc: irc.freenode.net#pkg
+  irc: irc.freenode.net#swimtext
 
 requires:
   perl: 5.8.1
