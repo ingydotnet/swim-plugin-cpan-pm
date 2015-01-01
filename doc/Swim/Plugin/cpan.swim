@@ -1,0 +1,52 @@
+<<<cpan-head>>>
+
+= Synopsis
+
+In your `.swim` file:
+
+  <<<cpan-head>>>
+
+  ... Swim CPAN doc content ...
+
+  <<<cpan-tail>>>
+
+From the command line:
+
+  swim --to=pod --meta=Meta doc/MyModule.swim
+
+= Description
+
+This Swim plugin will generate the head and tail of your pod files from a
+metadata file.
+
+== Meta Data Needed
+
+- `name`
+
+  Dist or module name
+
+- `abstract`
+
+  Dist abstract
+
+- `version`
+
+  Dist version
+
+- `author/name`
+
+  Author's full name
+
+- `author/email`
+
+  Author's email address
+
+- `badge`
+
+  One or more badge types. Optional.
+
+- `see`
+
+  List of links or module names. Optional.
+
+<<<cpan-tail>>>

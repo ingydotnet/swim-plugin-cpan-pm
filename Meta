@@ -1,0 +1,30 @@
+=meta: 0.0.2
+
+name: Swim-Plugin-cpan
+version: 0.0.1
+abstract: Swim CPAN Head/Tail Support
+homepage: https://metacpan.org/release/Swim-Plugin-cpan
+language: perl
+license: perl
+copyright: 2014
+
+author:
+  name: Ingy döt Net
+  email: ingy@cpan.org
+  homepage: http://ingy.net
+  github: ingydotnet
+  twitter: ingydotnet
+  freenode: ingy
+
+devel:
+  git: https://github.com/ingydotnet/swim-plugin-cpan-pm
+  bug: https://github.com/ingydotnet/swim-plugin-cpan-pm/issues
+  irc: irc.freenode.net#pkg
+
+requires:
+  perl: 5.8.1
+  Swim: 0.1.33
+  Swim::Plugin::badge: 0.1.7
+
+badge: travis
+see: Swim
