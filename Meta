@@ -6,7 +6,7 @@ abstract: Swim CPAN Head/Tail Support
 homepage: https://metacpan.org/release/Swim-Plugin-cpan
 language: perl
 license: perl
-copyright: 2014
+copyright: 2014-2015
 
 author:
   name: Ingy döt Net
