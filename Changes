@@ -1,4 +1,9 @@
 ---
+version: 0.0.2
+date:    Wed Dec 31 21:26:15 PST 2014
+changes:
+- Update copyright year.
+---
 version: 0.0.1
 date:    Wed Dec 31 21:22:30 PST 2014
 changes:
