@@ -1,4 +1,9 @@
 ---
+version: 0.0.5
+date:    Thu Jan  1 18:17:52 PST 2015
+changes:
+- Allow block-func calls to take args controlling the sections
+---
 version: 0.0.4
 date:    Wed Dec 31 22:29:59 PST 2014
 changes:

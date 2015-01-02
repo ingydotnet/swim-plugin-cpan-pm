@@ -1,7 +1,7 @@
 =meta: 0.0.2
 
 name: Swim-Plugin-cpan
-version: 0.0.4
+version: 0.0.5
 abstract: Swim CPAN Head/Tail Support
 homepage: https://metacpan.org/release/Swim-Plugin-cpan
 language: perl
@@ -23,7 +23,7 @@ devel:
 
 requires:
   perl: 5.8.1
-  Swim: 0.1.33
+  Swim: 0.1.35
   Swim::Plugin::badge: 0.1.7
 
 badge: travis
