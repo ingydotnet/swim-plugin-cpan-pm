@@ -1,12 +1,12 @@
 use strict; use warnings;
 package Swim::Plugin::cpan;
-our $VERSION = '0.0.5';
+our $VERSION = '0.0.6';
 
 package Swim::Pod;
 
 sub block_func_cpan_head {
   my ($self, $args) = @_;
-  $self->create_output($args, [ qw(name badge) ]);
+  $self->create_output($args, [ qw(name badge version) ]);
 }
 
 sub block_func_cpan_tail {
@@ -83,6 +83,19 @@ sub add_badge {
     $out =~ s/\A\n+//;
     return $out;
   }
+}
+
+sub add_version {
+  my ($self) = @_;
+  my $uc = $self->option->{'pod-upper-head'};
+  my $head_version = $uc ? 'VERSION' : 'Version';
+  my $meta = $self->meta;
+  (my $name = $meta->{name}) =~ s/-/::/g;
+  return <<"...";
+=head1 $head_version
+
+This document describes L<$name> version B<$meta->{version}>.\n";
+...
 }
 
 sub add_see {

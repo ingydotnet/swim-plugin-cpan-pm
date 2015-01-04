@@ -1,4 +1,10 @@
 ---
+version: 0.0.6
+date:    Sun Jan  4 15:57:06 PST 2015
+changes:
+- Add VERSION section
+- Update docs
+---
 version: 0.0.5
 date:    Thu Jan  1 18:17:52 PST 2015
 changes:

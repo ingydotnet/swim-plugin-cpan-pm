@@ -13,6 +13,11 @@ Swim::Plugin::cpan - Swim CPAN Head/Tail Support
 =for html
 <a href="https://travis-ci.org/ingydotnet/swim-plugin-cpan-pm"><img src="https://travis-ci.org/ingydotnet/swim-plugin-cpan-pm.png" alt="swim-plugin-cpan-pm"></a>
 
+=head1 Version
+
+This document describes L<Swim::Plugin::cpan> version B<0.0.6>.
+";
+
 =head1 Synopsis
 
 In your C<.swim> file:
@@ -32,7 +37,43 @@ From the command line:
 This Swim plugin will generate the head and tail of your pod files from a
 metadata file.
 
-=head2 Meta Data Needed
+=head1 Swim Functions
+
+This plugin provides 2 block level functions:
+
+=over
+
+=item `>>
+
+The C<cpan-head> function adds a C<name>, C<badge> and C<version> section
+(in that order) to your document using metadata variables. By default you
+get a C<NAME> section and a C<VERSION> section. You get a badge section if
+your metadata has a C<badge> key. You can specify the section names you want
+like this:
+
+    <<<cpan-head name version>>>
+
+You can request a section not be used like this:
+
+    <<<cpan-head -version>>>
+
+=item `>>
+
+The C<cpan-tail> function adds a C<see>, C<author> and C<copyright> section
+(in that order) to your document using metadata variables. By default you get
+a C<AUTHOR> section and a C<COPYRIGHT AND LICENSE> section. You can request a
+'SEE ALSO' section if your metadata has a C<see> key. You can specify the
+section names you want like this:
+
+    <<<cpan-tail see author copyright>>>
+
+You can request a section be added like this:
+
+    <<<cpan-head +see>>>
+
+=back
+
+=head2 Meta Data Used
 
 =over
 

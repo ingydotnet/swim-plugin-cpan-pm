@@ -19,7 +19,38 @@ From the command line:
 This Swim plugin will generate the head and tail of your pod files from a
 metadata file.
 
-== Meta Data Needed
+= Swim Functions
+
+This plugin provides 2 block level functions:
+
+- `<<<cpan-head [args]>>>
+
+  The `cpan-head` function adds a `name`, `badge` and `version` section (in
+  that order) to your document using metadata variables. By default you get a
+  `NAME` section and a `VERSION` section. You get a badge section if your
+  metadata has a `badge` key. You can specify the section names you want like this:
+
+    <<<cpan-head name version>>>
+
+  You can request a section not be used like this:
+
+    <<<cpan-head -version>>>
+
+- `<<<cpan-tail [args]>>>
+
+  The `cpan-tail` function adds a `see`, `author` and `copyright` section (in
+  that order) to your document using metadata variables. By default you get a
+  `AUTHOR` section and a `COPYRIGHT AND LICENSE` section. You can request a
+  'SEE ALSO' section if your metadata has a `see` key. You can specify the
+  section names you want like this:
+
+    <<<cpan-tail see author copyright>>>
+
+  You can request a section be added like this:
+
+    <<<cpan-head +see>>>
+
+== Meta Data Used
 
 - `name`
 
@@ -49,4 +80,4 @@ metadata file.
 
   List of links or module names. Optional.
 
-<<<cpan-tail>>>
+<<<cpan-tail +see>>>
