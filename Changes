@@ -1,4 +1,9 @@
 ---
+version: 0.0.7
+date:    Fri Mar 13 18:10:48 PDT 2015
+changes:
+- Fixed a typo that messed up cpan-head. @mohawk++
+---
 version: 0.0.6
 date:    Sun Jan  4 15:57:06 PST 2015
 changes:

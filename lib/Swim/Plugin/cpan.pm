@@ -1,6 +1,6 @@
 use strict; use warnings;
 package Swim::Plugin::cpan;
-our $VERSION = '0.0.6';
+our $VERSION = '0.0.7';
 
 package Swim::Pod;
 
@@ -94,7 +94,7 @@ sub add_version {
   return <<"...";
 =head1 $head_version
 
-This document describes L<$name> version B<$meta->{version}>.\n";
+This document describes L<$name> version B<$meta->{version}>.
 ...
 }
 
